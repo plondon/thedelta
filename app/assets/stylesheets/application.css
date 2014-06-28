@@ -15,6 +15,7 @@
  *= require category
  *= require language
  *= require login_signup
+ *= require password_resets.css.scss
  *= require questions_show
  *= require question_new
  *= require recorder

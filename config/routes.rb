@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'password_resets/new'
+
   root to: "languages#index"
   get '/categories', to: 'categories#index'
 
@@ -19,6 +21,7 @@ Rails.application.routes.draw do
   resources :answers
   resources :categories, only: [:index]
   resources :questions, only: [:index, :show, :new, :create]
+  resources :password_resets
 
   namespace :admin do
     resources :answers

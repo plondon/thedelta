@@ -1,0 +1,15 @@
+<div class="container">
+  <h2 class="form-signin-heading">Reset Password</h2>
+
+  <%= form_tag password_resets_path, :method => :post do %>
+
+    <div class="form-group">
+    <%= text_field_tag :email, "", class: 'form-control input-lg custom',
+    placeholder: 'Email address', autofocus: true %>
+    </div>
+
+    <%= submit_tag 'Reset Password', class: 'btn-lg btn-success sign_in_submit', style: 'margin:0 10%; width:80%; border-radius: 5px;'  %>
+
+
+  <% end %>
+</div>
